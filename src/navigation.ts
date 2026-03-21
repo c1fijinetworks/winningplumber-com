@@ -15,10 +15,10 @@ export const headerData = {
 export const footerData = {
   links: [
     {
-      title: 'Winning Plumber — Professional Booking for Local Pros',
+      title: 'Winning Plumber — Professional Digital Presence',
       links: [
         { text: "Claim Your Spot – $99", href: getPermalink('/pricing') },
-        { text: 'Why We Love Service Businesses', href: getPermalink('/about') },
+        { text: 'Why We Love Service Pros', href: getPermalink('/about') },
         { text: 'Support', href: getPermalink('/contact') },
       ],
     },
