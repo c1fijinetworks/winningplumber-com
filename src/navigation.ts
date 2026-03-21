@@ -18,7 +18,7 @@ export const footerData = {
       title: 'Winning Plumber — Professional Digital Presence',
       links: [
         { text: "Claim Your Spot – $99", href: getPermalink('/pricing') },
-        { text: 'Why We Love Service Pros', href: getPermalink('/about') },
+        { text: 'Why We Love Local Pros', href: getPermalink('/about') },
         { text: 'Support', href: getPermalink('/contact') },
       ],
     },
