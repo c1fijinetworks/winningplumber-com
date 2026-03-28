@@ -7,7 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 
 const metadata = {
   title: 'Contact Support | Winning Plumber',
-  description: 'Have questions about the lifetime deal or need a multi-truck quote? Contact our team today.',
+  description: 'Have questions about the lifetime deal or need a multi-location quote? Contact our team today.',
   ignoreTitleTemplate: true,
 };
 ---
@@ -16,7 +16,7 @@ const metadata = {
   <HeroText 
     tagline="We're in your corner ⭐⭐⭐⭐⭐"
     title="Let's Talk About Your Business." 
-    subtitle="Have questions about the lifetime deal? Need a bulk discount for multiple trucks? Or just want to check up? We respond faster than an emergency repair."
+    subtitle="Have questions about the vanity URL setup? Need a bulk discount for multiple trucks? Or just want to check in? We respond faster than an emergency repair."
   />
 
   <GoogleContactForm />
@@ -25,11 +25,23 @@ const metadata = {
     class="-mt-16"
     columns={3}
     items={[
-      { title: 'Multi-Truck Discounts', description: 'Running a fleet? Contact us for custom bulk pricing on 3+ licenses.', icon: 'tabler:truck' },
-      { title: 'White-Glove Support', description: 'Need help with your widget installation? Let us help you with that.', icon: 'tabler:headset' },
-      { title: 'Trade Partnerships', description: 'Are you a marketing consultant for the trades? Let’s work together.', icon: 'tabler:users' },
+      {
+        title: 'Multi-Truck Discounts',
+        description: 'Running a full fleet? Contact us for custom bulk pricing on 3+ vanity URLs.',
+        icon: 'tabler:building-store',
+      },
+      {
+        title: 'White-Glove Support',
+        description: 'Need help with your Google Business integration? Let us handle the tech for you.',
+        icon: 'tabler:headset',
+      },
+      {
+        title: 'Trade Partnerships',
+        description: 'Are you a trade consultant or marketing agency? Let’s talk about working together.',
+        icon: 'tabler:users',
+      },
     ]}
   />
 
-  <Hero class="-mt-16" image={{ src: '/images/testimonial-7.webp', alt: 'Winning Plumber happy client' }} />
+  <Hero class="-mt-16" image={{ src: '/images/testimonial-7.webp', alt: 'Winning Plumber happy professional' }} />
 </Layout>

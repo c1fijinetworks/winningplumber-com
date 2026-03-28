@@ -9,24 +9,24 @@ import { lifetimeDeal } from '~/data/pricingData';
 import Hero from '~/components/widgets/Hero.astro';
 
 const metadata = {
-  title: 'Pricing - Winning Plumber | Save $1,200/year',
-  description: 'The last review system you will ever buy. One-time $99 payment for a lifetime of 5-star Google reviews. No monthly fees.',
+  title: 'Pricing - Winning Plumber | Professional Digital Presence',
+  description: 'Elevate your plumbing business with a professional vanity URL. One-time fee for a lifetime of premium bookings. No monthly fees.',
   ignoreTitleTemplate: true,
 };
 ---
 
 <Layout metadata={metadata}>
   <HeroText 
-    tagline="The Last Review System You'll Ever Buy ⭐⭐⭐⭐⭐"
+    tagline="The Last Booking System You'll Ever Buy ⭐⭐⭐⭐⭐"
     title="Stop Paying Monthly Fees." 
-    subtitle="Most reputation software charges $100–$150 every single month. We charge a flat $99 one-time fee with total setup. That is $1,200+ back in your pocket every year."
+    subtitle="Most booking software charges $50–$150 every single month. We charge a flat $99 one-time fee with total setup. That's $600+ back in your pocket in the first year alone."
   />
 
   <div class="-mt-16">
     <Pricing
       id="pricing"
       title="Invest Once. Grow Forever."
-      subtitle="Full White-Glove Setup Included. We build the engine; you focus on the job."
+      subtitle="Full White-Glove Setup Included. We build the engine; you focus on your clients."
       prices={[lifetimeDeal]}
     />
   </div>
@@ -36,12 +36,36 @@ const metadata = {
     subtitle="We handle the heavy lifting so you can stay in the field."
     columns={3}
     items={[
-      { title: 'High-Scan Station Signs', description: 'Custom-designed QR codes for your truck or business cards, optimized for quick reviews.', icon: 'tabler:qrcode' },
-      { title: 'Direct Google Maps Sync', description: 'We connect your engine directly to your Google Business Profile to boost your local ranking.', icon: 'tabler:brand-google' },
-      { title: 'The "Wall of Love" Widget', description: 'A beautiful, automated widget for your website that showcases your best reviews.', icon: 'tabler:code' },
-      { title: 'Local SEO Dominance', description: 'Fresh, consistent reviews are the #1 factor for ranking in local search. Our system automates this.', icon: 'tabler:rocket' },
-      { title: 'Unlimited 5-Star Reviews', description: 'No per-review fees or caps. Collect 10 reviews or 10,000—your price never changes.', icon: 'tabler:infinity' },
-      { title: 'Lifetime Future-Proofing', description: 'Get all future software updates and new features for life at no extra cost.', icon: 'tabler:refresh' },
+      {
+        title: 'Premium Vanity URL',
+        description: 'A clean web address (yourname.winningplumber.com) that belongs to your brand.',
+        icon: 'tabler:link',
+      },
+      {
+        title: 'Google Business Sync',
+        description: 'We help you link your vanity URL to the blue Google "Book Online" button for maximum local SEO impact.',
+        icon: 'tabler:brand-google',
+      },
+      {
+        title: 'Boutique Mobile UX',
+        description: 'A mobile-first dispatch interface designed to reassure homeowners instantly.',
+        icon: 'tabler:device-mobile',
+      },
+      {
+        title: 'Local SEO Dominance',
+        description: 'A custom branded domain is a massive trust signal for Google search rankings in your city.',
+        icon: 'tabler:rocket',
+      },
+      {
+        title: 'Unlimited Potential',
+        description: 'No "per-booking" fees or caps. Take 10 jobs or 1,000—your price never changes.',
+        icon: 'tabler:infinity',
+      },
+      {
+        title: 'Lifetime Support',
+        description: 'Get all future technical maintenance and basic URL management for life at no extra cost.',
+        icon: 'tabler:refresh',
+      },
     ]}
   />
 
@@ -49,10 +73,10 @@ const metadata = {
     class="-mt-16 px-6"
     title="Pricing FAQ"
     items={[
-        { title: 'Why is it a one-time fee?', description: 'We believe in supporting local tradesmen. We prefer to charge a fair setup fee rather than "renting" you software forever.', icon: 'tabler:coin' },
-        { title: 'What if I am not tech-savvy?', description: 'That is why we are here. We do the setup for you. If you can send a text, you can use our system!', icon: 'tabler:tool' },
-        { title: 'Are there any hidden costs?', description: 'Zero. No maintenance fees, no hosting fees, and no success fees. $99 is the total cost.', icon: 'tabler:check' },
-        { title: 'What if I have multiple trucks?', description: 'Each Google Maps location requires its own setup. Contact us for multi-truck bulk discounts!', icon: 'tabler:truck' },
+        { title: 'Why is it a one-time fee?', description: 'We prefer to charge a fair setup fee for our labor rather than "renting" you software forever. We support independent contractors.', icon: 'tabler:coin' },
+        { title: 'What if I am not tech-savvy?', description: 'We do the entire setup for you. If you can send an email, you can use our system.', icon: 'tabler:tool' },
+        { title: 'Are there any hidden costs?', description: 'Zero. No maintenance fees, no hosting fees, and no "success" fees. $99 is the total cost.', icon: 'tabler:check' },
+        { title: 'What if I open a second location?', description: 'Your $99 license covers one vanity URL. Contact us for deep discounts on additional branches!', icon: 'tabler:building-store' },
     ]}
   >
     <Fragment slot="bg"><div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div></Fragment>
@@ -60,13 +84,15 @@ const metadata = {
 
   <Hero class="-mt-16">
     <Fragment slot="image">
-      <img src="/images/testimonial-5.webp" alt="Plumber reviewing feedback" class="mx-auto rounded-md w-full shadow-lg" loading="lazy" />
+      <img src="/images/testimonial-5.webp" alt="Contractor reviewing digital schedule" class="mx-auto rounded-md w-full shadow-lg" loading="lazy" />
     </Fragment>
   </Hero>
 
   <CallToAction
-    title="Ready to Turn Every Service Call Into a Rave Review?"
-    subtitle="Claim your lifetime deal today and have your custom review engine ready for your first client tomorrow morning ⭐⭐⭐⭐⭐"
-    actions={[{ variant: 'primary', text: 'Secure My $99 Lifetime Deal', href: '#pricing' }]}
+    title="Ready to Own Your Professional Identity?"
+    subtitle="Claim your vanity URL today and have your custom booking engine ready for your first dispatch tomorrow morning ⭐⭐⭐⭐⭐"
+    actions={[
+      { variant: 'primary', text: 'Secure My $99 Lifetime Deal', href: '#pricing' },
+    ]}
   />
 </Layout>

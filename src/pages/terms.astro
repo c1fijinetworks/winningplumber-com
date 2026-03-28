@@ -1,16 +1,43 @@
 ---
-import Layout from '~/layouts/PageLayout.astro';
-const metadata = { title: 'Terms of Service | Winning Plumber' };
+import Layout from '~/layouts/MarkdownLayout.astro';
+
+const metadata = {
+  title: 'Terms of Service',
+  description: 'Terms of Service and User Agreement for Winning Plumber.',
+};
 ---
-<Layout metadata={metadata}>
-  <section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-4xl">
-    <h1 class="font-bold font-heading text-4xl md:text-5xl leading-tighter tracking-tighter mb-8">Terms of Service</h1>
-    <div class="prose prose-lg max-w-4xl dark:prose-invert mt-8">
-      <p>Welcome to <strong>Winning Plumber</strong>. By using our service, you agree to these terms regarding your professional booking URL setup.</p>
-      <h2 class="text-2xl font-bold mt-8">1. Service Description</h2>
-      <p>Winning Plumber provides technical setup and redirection for professional vanity URLs (yourname.winningplumber.com) designed for plumbing professionals.</p>
-      <h2 class="text-2xl font-bold mt-8">2. One-Time Payment</h2>
-      <p>The $99 fee is a one-time setup and licensing fee. There are no monthly recurring SaaS taxes for the lifetime of the redirect service provided at setup.</p>
-    </div>
-  </section>
+
+<Layout frontmatter={metadata}>
+
+**Effective Date:** January 1, 2024
+
+Welcome to Winning Plumber ("Company", "we", "our", "us"). These Terms of Service ("Terms") govern your use of our website, custom booking URLs, and related tools (collectively, the "Services"). By accessing or using our Services, you agree to be bound by these Terms. 
+
+### 1. Account Terms and Vanity URLs
+By purchasing a lifetime setup for a Winning Plumber vanity URL, you are granted a non-exclusive, non-transferable license to use the customized domain (e.g., yourname.winningplumber.com) to redirect to your scheduling service. 
+- You agree to provide accurate, current, and complete information during the setup process.
+- We reserve the right to revoke or suspend URLs that engage in fraudulent activity, copyright infringement, or violate local laws.
+
+### 2. Payments and Refunds
+Our Services are billed on a one-time payment basis. 
+- Because of the immediate, customized labor involved in provisioning your vanity URL and configuring your local integration, **all sales are final and non-refundable** once the setup process has begun.
+
+### 3. Intellectual Property
+The Service and its original content, features, and functionality are and will remain the exclusive property of Winning Plumber and its licensors. You retain all rights to your personal business name, branding, and logos submitted to us.
+
+### 4. Limitation of Liability
+In no event shall Winning Plumber, nor its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your access to or use of the Service.
+
+### 5. User Obligations
+You agree not to use the Service for any unlawful purpose or any purpose prohibited under this clause. You agree not to use the Service in any way that could damage the Service, the business, or the general reputation of Winning Plumber.
+
+### 6. Changes to Terms
+We reserve the right, at our sole discretion, to modify or replace these Terms at any time. By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms.
+
+### 7. Contact Us
+If you have any questions about these Terms, please contact us via our [Contact Page](/contact).
+
+### 8. General Terms
+**Governing Law:** These Terms shall be governed by the laws of **the State of Delaware, United States**, without regard to its conflict of law principles. You agree to submit to the personal and exclusive jurisdiction of the state and federal courts located within the State of Delaware to resolve any dispute or claim arising from these Terms.
+
 </Layout>
