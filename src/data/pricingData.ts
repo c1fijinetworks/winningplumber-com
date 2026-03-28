@@ -6,7 +6,7 @@ export const lifetimeDeal = {
   items: [
     { description: 'Premium Vanity URL (yourname.winningplumber.com)' },
     { description: 'Local SEO Optimized Branding' },
-    { description: 'Real-time Calendar & Dispatch Link' },
+    { description: 'Elite Branded Redirection Portal' },
     { description: 'Mobile-First Job Booking' },
     { description: 'Google Business Profile Integration' },
     { description: 'No monthly SaaS tax, ever!' },
